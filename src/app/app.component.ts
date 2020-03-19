@@ -7,6 +7,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'koronat';
-  checked= false;
+  okudumOnayi:boolean= false;
   asama = 1;
+
+  cevapOksuruk = 0;
+  cevapAtes = 0;
+  cevapNefes = 0;
+
+  start(){
+    if(this.okudumOnayi){
+      this.asama = 2;
+    }
+  }
+
+  setOksuruk(){
+    this.asama = 3;
+  }  
+  setAtes(){
+    this.asama = 4;
+  }
+  setNefes(){
+    this.asama = 5;
+  }
 }
