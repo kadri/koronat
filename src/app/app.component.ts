@@ -16,6 +16,8 @@ export class AppComponent {
   cevapAtes = 0;
   cevapNefes = 0;
 
+  sonuc = 0;
+
   basla(){
     if(this.okudumOnayi){
       this.asama = 1;
@@ -24,10 +26,17 @@ export class AppComponent {
   
   asamaIleri(){
     this.asama ++;
+    this.hesapla();
   }
 
   asamaGeri(){
     this.asama --;
   }
 
+  hesapla(){
+    this.sonuc = 0;
+    this.cevaplar.Dizi.forEach(eleman => {
+      this.sonuc += eleman.katsayi * eleman.cevap;
+    });
+  }
 }
