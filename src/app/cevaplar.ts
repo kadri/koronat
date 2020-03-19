@@ -249,6 +249,43 @@ export class Cevaplar {
                     deger: 3
                 }
             ]
+        },
+        {
+            asama: 11,
+            kod: 'yas',
+            baslik: 'Yaşınız',
+            cevap: 0,
+            katsayi: 3,
+            secenekler : [
+                { 
+                    yazi: 'Çocuk (0 - 12)',
+                    deger: 0
+                },
+                { 
+                    yazi: 'Genç (13 - 20)',
+                    deger: 1
+                },
+                { 
+                    yazi: 'Yetişkin (21 - 35)',
+                    deger: 2
+                },
+                { 
+                    yazi: 'Orta Yaş (36 - 50)',
+                    deger: 2
+                },
+                { 
+                    yazi: 'Yaşlı (51 - 65)',
+                    deger: 3
+                },
+                { 
+                    yazi: 'İhtiyar (66 - 80)',
+                    deger: 4
+                },
+                { 
+                    yazi: 'İleri Yaş (81 - 100)',
+                    deger: 7
+                }
+            ]
         }
     ]
 }
