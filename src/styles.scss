@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "helper.scss";
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family:  Roboto, "Helvetica Neue", sans-serif; width: 100vw; height: 100vh;}
+.mat-body, .mat-body-1, .mat-typography{
+    width: 100vw; height: 100vh;
+}
