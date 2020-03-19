@@ -1,3 +1,4 @@
+import { Cevaplar } from './cevaplar';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,26 +8,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'koronat';
+  cevaplar: Cevaplar = new Cevaplar();
   okudumOnayi:boolean= false;
-  asama = 1;
+  asama = 0;
 
   cevapOksuruk = 0;
   cevapAtes = 0;
   cevapNefes = 0;
 
-  start(){
+  basla(){
     if(this.okudumOnayi){
-      this.asama = 2;
+      this.asama = 1;
     }
   }
+  
+  asamaIleri(){
+    this.asama ++;
+  }
 
-  setOksuruk(){
-    this.asama = 3;
-  }  
-  setAtes(){
-    this.asama = 4;
+  asamaGeri(){
+    this.asama --;
   }
-  setNefes(){
-    this.asama = 5;
-  }
+
 }

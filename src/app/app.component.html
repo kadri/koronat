@@ -1,4 +1,4 @@
-<div *ngIf="asama === 1" class="m-24 h-100-p" fxLayout="column" fxLayoutAlign="space-between center">
+<div *ngIf="asama === 0" class="m-24 h-100-p" fxLayout="column" fxLayoutAlign="space-around center">
     <div>
         <p>Bu uygulama sizin veya testi yaptığınız yakınınızın durumunu kesin olarak belirlemez. </p>
         <p>Tek amacımız hastane ve acil servislerdeki yığılmaları önlemek ve bu zor zamanda vatandaşımıza yararlı
@@ -9,72 +9,35 @@
             Okudum ve Kabul Ettim
         </mat-slide-toggle>
     </div>
-    <button class="mb-32 w-100-p" mat-raised-button color="primary" (click)="start()"
+    <button class="mb-32 w-100-p" mat-raised-button color="primary" (click)="basla()"
         [disabled]="!okudumOnayi">Başla</button>
 </div>
 
-<div *ngIf="asama === 2" class="m-24 h-100-p" fxLayout="column" fxLayoutAlign="space-between center">
-    <div class="w-100-p">
-        <label id="oksuruk-group-label" class="m-24"><b>Öksürük</b></label>
-        <mat-radio-group aria-labelledby="oksuruk-group-label" 
-            [(ngModel)]="cevapOksuruk" fxLayout="column" class="m-24">
-            <mat-radio-button value="0">
-                Yok
-            </mat-radio-button>
-            <mat-radio-button value="1">
-                Az
-            </mat-radio-button>
-            <mat-radio-button value="2">
-                Orta
-            </mat-radio-button>
-            <mat-radio-button value="3">
-                Şiddetli
-            </mat-radio-button>
-        </mat-radio-group>
+<ng-container *ngFor="let item of cevaplar.Dizi">
+    <div *ngIf="asama === item.asama" class="m-24 h-100-p" fxLayout="column" fxLayoutAlign="space-around center">
+        <div class="w-100-p">
+            <label id="group-label" class="m-24"><b>{{item.baslik}}</b></label>
+            <mat-radio-group aria-labelledby="group-label" [(ngModel)]="item.cevap" fxLayout="column" class="m-24">
+                <mat-radio-button *ngFor="let secenek of item.secenekler" [value]="secenek.deger">
+                    {{ secenek.yazi }}
+                </mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <div class="mb-32" fxLayout="row" fxLayoutAlign="space-around center">
+            <button class="mx-8" mat-raised-button (click)="asamaGeri()">Geri</button>
+            <button class="mx-8" mat-raised-button color="primary" (click)="asamaIleri()">Devam Et</button>
+        </div>
     </div>
-    <button class="mb-32 w-100-p" mat-raised-button color="primary" (click)="setOksuruk()">Devam Et</button>
-</div>
+</ng-container>
 
-<div *ngIf="asama === 3" class="m-24 h-100-p" fxLayout="column" fxLayoutAlign="space-between center">
-    <div class="w-100-p">
-        <label id="ates-group-label" class="m-24"><b>Ateş</b></label>
-        <mat-radio-group aria-labelledby="ates-group-label" 
-            [(ngModel)]="cevapAtes" fxLayout="column" class="m-24">
-            <mat-radio-button value="0">
-                Yok
-            </mat-radio-button>
-            <mat-radio-button value="1">
-                Az (37-38)
-            </mat-radio-button>
-            <mat-radio-button value="2">
-                Orta (38-39)
-            </mat-radio-button>
-            <mat-radio-button value="3">
-                Şiddetli (39-40)
-            </mat-radio-button>
-        </mat-radio-group>
+<div *ngIf="asama === 11" class="m-24 h-100-p" fxLayout="column" fxLayoutAlign="space-around center">
+    <div>
+        <p>Sağlığınız yerinde maaşallah!</p>
     </div>
-    <button class="mb-32 w-100-p" mat-raised-button color="primary" (click)="setAtes()">Devam Et</button>
-</div>
-
-<div *ngIf="asama === 4" class="m-24 h-100-p" fxLayout="column" fxLayoutAlign="space-between center">
-    <div class="w-100-p">
-        <label id="nefes-group-label" class="m-24"><b>Nefes Darlığı</b></label>
-        <mat-radio-group aria-labelledby="nefes-group-label" 
-            [(ngModel)]="cevapNefes" fxLayout="column" class="m-24">
-            <mat-radio-button value="0">
-                Yok
-            </mat-radio-button>
-            <mat-radio-button value="1">
-                Az
-            </mat-radio-button>
-            <mat-radio-button value="2">
-                Orta
-            </mat-radio-button>
-            <mat-radio-button value="3">
-                Şiddetli
-            </mat-radio-button>
-        </mat-radio-group>
+    <div>
     </div>
-    <button class="mb-32 w-100-p" mat-raised-button color="primary" (click)="setNefes()">Devam Et</button>
+    <div class="mb-32" fxLayout="row" fxLayoutAlign="space-around center">
+        <button class="mx-8" mat-raised-button (click)="asamaGeri()">Geri</button>
+        <button class="mx-8" mat-raised-button color="primary" (click)="basla()">Tekrar</button>
+    </div>
 </div>
