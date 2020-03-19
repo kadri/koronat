@@ -7,6 +7,8 @@ Projede amaçlanan; Covid-19(yeni tip korona) virüsünün hızlı yayılımı s
 
 Umarız bu salgını en az kayıp ile atlatırız. 
 
+Demo link http://koronat.vidarti.com
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
