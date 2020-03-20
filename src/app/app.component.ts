@@ -45,5 +45,8 @@ export class AppComponent {
     else if(this.sonuc > 80){
       this.sonucRenk = 'warn';
     }
+    else{
+      this.sonucRenk = 'primary';
+    }
   }
 }
