@@ -17,20 +17,7 @@ Sağlık Bakanlığı linki : https://koronaonlem.saglik.gov.tr/
 Katsayı hesaplama aşağıdaki değerlere göre yapılmakta. Algoritmayı geliştirmek adına önerilere açığız. 
 Katsayı çarpım değerini temsil ediyor. Örneğin ateş yok ise direk -2 ile çarparak toplama -16 ekliyor (16 çıkarıyor), ateşi şiddetli ise 32 ekliyor. 
 
-| Durum     | Katsayı | Yok | Az  | Orta | Şiddetli |
-| --------- | ------- | --- | --- | ---- | -------- | 
-| Ateş      | 8 x     | -2  | 2   | 3    | 4        |
-| Halsizlik | 4 x     | -1  | 1   | 2    | 3        |
-| Öksürük   | 6 x     | -2  | 2   | 3    | 4        |
-| Hapşırma  | 4 x     | 1   | -1  | -2   | -6       |
-| Vücut Ağr | 4 x     | -1  | 1   | 2    | 3        |
-| Burun Akı | 3 x     | 1   | -1  | -2   | -4       |
-| Boğaz Ağr | 4 x     | -2  | 2   | 3    | 4        |
-| İshal     | 2 x     | -1  | 1   | 2    | 3        |
-| Baş Ağr   | 3 x     | -1  | 1   | 2    | 3        |
-| Nefes Dar | 6 x     | -2  | 2   | 3    | 4        |
-
-| First Header  | Second Header | First Header  | Second Header | First Header  | Second Header |
+|  Durum  | Katsayı | Yok  | Az | Orta  | Şiddetli |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Ateş      | 8 x     | -2  | 2   | 3    | 4        |
 | Halsizlik | 4 x     | -1  | 1   | 2    | 3        |
