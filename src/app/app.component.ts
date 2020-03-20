@@ -17,6 +17,7 @@ export class AppComponent {
   cevapNefes = 0;
 
   sonuc = 0;
+  sonucRenk = 'primary';
 
   basla(){
     if(this.okudumOnayi){
@@ -38,5 +39,11 @@ export class AppComponent {
     this.cevaplar.Dizi.forEach(eleman => {
       this.sonuc += eleman.katsayi * eleman.cevap;
     });
+    if(this.sonuc > 50 && this.sonuc <=80){
+      this.sonucRenk = 'accent';
+    }
+    else if(this.sonuc > 80){
+      this.sonucRenk = 'warn';
+    }
   }
 }

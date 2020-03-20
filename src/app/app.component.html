@@ -4,11 +4,14 @@
         <p>Tek amacımız hastane ve acil servislerdeki yığılmaları önlemek ve bu zor zamanda vatandaşımıza yararlı
             olmaktır. <b>Hiçbir kişisel veriniz saklanmamaktadır ve hiçbir kurumla paylaşılmamaktadır.</b>
             Dünya Sağlık Örgütünün yayınladığı semptomlar ve diğer hastalıklar ile farklarından yola çıkılarak
-            algoritma geliştirilmekte olup tam ve kesin sonuç vermemektedir. Sağlık Bakanlığı bu konuda bir uygulama yayınlamış olup
-            uygulamaya <a href="https://koronaonlem.saglik.gov.tr/" target="_blank">https://koronaonlem.saglik.gov.tr/</a> adresinden ulaşabilirsiniz.</p>
-            <p>Proje kodlarına <a href="https://github.com/kadri/koronat" target="_blank">https://github.com/kadri/koronat</a> adresinden erişilebilir</p>
+            algoritma geliştirilmekte olup tam ve kesin sonuç vermemektedir. Sağlık Bakanlığı bu konuda bir uygulama
+            yayınlamış olup
+            uygulamaya <a href="https://koronaonlem.saglik.gov.tr/"
+                target="_blank">https://koronaonlem.saglik.gov.tr/</a> adresinden ulaşabilirsiniz.</p>
+        <p>Proje kodlarına <a href="https://github.com/kadri/koronat"
+                target="_blank">https://github.com/kadri/koronat</a> adresinden erişilebilir</p>
     </div>
-    <div>
+    <div class="m-12">
         <mat-slide-toggle color="primary" [(ngModel)]="okudumOnayi">
             Okudum ve Kabul Ettim
         </mat-slide-toggle>
@@ -36,12 +39,28 @@
 
 <div *ngIf="asama === 12" class="m-24" fxLayout="column" fxLayoutAlign="space-around center">
     <div>
-        <p *ngIf="sonuc <= 50">Virüs semptomları rastlanmadı!</p>
-        <p *ngIf="sonuc > 50 && sonuc <=80">Virüse yakalanma ihtimaliniz bulunmakta, belirtilerin artması durumunda <b><a href="tel:184">Alo 184</a></b> çağrı hattını arayınız!</p>
-        <p *ngIf="sonuc > 80">Virüs belirtileri çok yüksek, <b><a href="tel:184">Alo 184</a></b> çağrı hattını arayınız!</p>
+        <p *ngIf="sonuc <= 50">
+            <b>Virüs semptomları rastlanmadı!</b>
+            <br><br>Lütfen evde kalınız ve gerekli olmadıkça dışarı
+            çıkmayınız. Bulunduğunuz ortamı sık sık havalandırınız. Dışarıya çıktığınızda mutlaka maske takınız.
+            Ellerinizi sık sık yıkayınız. Yardıma ihtiyacınız olduğunda Alo 184 çağrı hattını arayınız.
+        </p>
+        <p *ngIf="sonuc > 50 && sonuc <=80">
+            <b>Virüse yakalanma ihtimaliniz bulunmakta!</b>
+            <br><br>
+            Bu durumda lütfen çevrenizdekiler ile temastan kaçınınız. Belirtilerin artması veya geçmemesi durumunda
+            <b><a href="tel:184">Alo 184</a></b> çağrı hattını arayınız!</p>
+        <p *ngIf="sonuc > 80"><b>Virüs belirtileri çok yüksek!</b>
+            <br><br>
+            <b><a href="tel:184">Alo 184</a></b> çağrı hattını hemen arayınız! 
+            Koruyucu maske takınız ve çevrenizdekilerden uzak durunuz. Çok dikkatli olarak virüs yayılmasını önleyiniz. 
+            Sizin dikkatiniz bir çok insanın virüsten korunmasını sağlayacaktır.
+        </p>
     </div>
-    <div>
-    </div>
+
+    <mat-progress-bar class="m-32 w-80-p" [color]="sonucRenk" [value]="sonuc">
+    </mat-progress-bar>
+
     <div class="mb-32" fxLayout="row" fxLayoutAlign="space-around center">
         <button class="mx-8" mat-raised-button (click)="asamaGeri()">Geri</button>
         <button class="mx-8" mat-raised-button color="primary" (click)="basla()">Tekrar</button>
