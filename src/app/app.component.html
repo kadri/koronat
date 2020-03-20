@@ -1,12 +1,12 @@
-<div *ngIf="asama === 0" class="m-24 h-100-p" fxLayout="column" fxLayoutAlign="space-around center">
+<div *ngIf="asama === 0" class="m-24" fxLayout="column" fxLayoutAlign="space-around center">
     <div>
         <p>Bu uygulama sizin veya testi yaptığınız yakınınızın durumunu kesin olarak belirlemez. </p>
         <p>Tek amacımız hastane ve acil servislerdeki yığılmaları önlemek ve bu zor zamanda vatandaşımıza yararlı
             olmaktır. <b>Hiçbir kişisel veriniz saklanmamaktadır ve hiçbir kurumla paylaşılmamaktadır.</b>
             Dünya Sağlık Örgütünün yayınladığı semptomlar ve diğer hastalıklar ile farklarından yola çıkılarak
             algoritma geliştirilmekte olup tam ve kesin sonuç vermemektedir. Sağlık Bakanlığı bu konuda bir uygulama yayınlamış olup
-            uygulamaya <a href="https://koronaonlem.saglik.gov.tr/">https://koronaonlem.saglik.gov.tr/</a> adresinden ulaşabilirsiniz.</p>
-            <p>Proje kodlarına <a href="https://github.com/kadri/koronat">https://github.com/kadri/koronat</a> adresinden erişilebilir</p>
+            uygulamaya <a href="https://koronaonlem.saglik.gov.tr/" target="_blank">https://koronaonlem.saglik.gov.tr/</a> adresinden ulaşabilirsiniz.</p>
+            <p>Proje kodlarına <a href="https://github.com/kadri/koronat" target="_blank">https://github.com/kadri/koronat</a> adresinden erişilebilir</p>
     </div>
     <div>
         <mat-slide-toggle color="primary" [(ngModel)]="okudumOnayi">
@@ -18,7 +18,7 @@
 </div>
 
 <ng-container *ngFor="let item of cevaplar.Dizi">
-    <div *ngIf="asama === item.asama" class="m-24 h-100-p" fxLayout="column" fxLayoutAlign="space-around center">
+    <div *ngIf="asama === item.asama" class="m-24" fxLayout="column" fxLayoutAlign="space-around center">
         <div class="w-100-p">
             <label id="group-label" class="m-24"><b>{{item.baslik}}</b></label>
             <mat-radio-group aria-labelledby="group-label" [(ngModel)]="item.cevap" fxLayout="column" class="m-24">
@@ -34,7 +34,7 @@
     </div>
 </ng-container>
 
-<div *ngIf="asama === 12" class="m-24 h-100-p" fxLayout="column" fxLayoutAlign="space-around center">
+<div *ngIf="asama === 12" class="m-24" fxLayout="column" fxLayoutAlign="space-around center">
     <div>
         <p *ngIf="sonuc <= 50">Virüs semptomları rastlanmadı!</p>
         <p *ngIf="sonuc > 50 && sonuc <=80">Virüse yakalanma ihtimaliniz bulunmakta, belirtilerin artması durumunda <b><a href="tel:184">Alo 184</a></b> çağrı hattını arayınız!</p>
