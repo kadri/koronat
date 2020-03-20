@@ -21,7 +21,7 @@ Katsayı çarpım değerini temsil ediyor. Örneğin ateş yok ise direk -2 ile 
 | --------- | ------- | --- | --- | ---- | -------- | 
 | Ateş      | 8 x     | -2  | 2   | 3    | 4        |
 | Halsizlik | 4 x     | -1  | 1   | 2    | 3        |
-| Öksürük   | 6 x     | -2  | 2   | 3    | 4        |        
+| Öksürük   | 6 x     | -2  | 2   | 3    | 4        |
 | Hapşırma  | 4 x     | 1   | -1  | -2   | -6       |
 | Vücut Ağr | 4 x     | -1  | 1   | 2    | 3        |
 | Burun Akı | 3 x     | 1   | -1  | -2   | -4       |
@@ -30,10 +30,18 @@ Katsayı çarpım değerini temsil ediyor. Örneğin ateş yok ise direk -2 ile 
 | Baş Ağr   | 3 x     | -1  | 1   | 2    | 3        |
 | Nefes Dar | 6 x     | -2  | 2   | 3    | 4        |
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| First Header  | Second Header | First Header  | Second Header | First Header  | Second Header |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Ateş      | 8 x     | -2  | 2   | 3    | 4        |
+| Halsizlik | 4 x     | -1  | 1   | 2    | 3        |
+| Öksürük   | 6 x     | -2  | 2   | 3    | 4        |
+| Hapşırma  | 4 x     | 1   | -1  | -2   | -6       |
+| Vücut Ağr | 4 x     | -1  | 1   | 2    | 3        |
+| Burun Akı | 3 x     | 1   | -1  | -2   | -4       |
+| Boğaz Ağr | 4 x     | -2  | 2   | 3    | 4        |
+| İshal     | 2 x     | -1  | 1   | 2    | 3        |
+| Baş Ağr   | 3 x     | -1  | 1   | 2    | 3        |
+| Nefes Dar | 6 x     | -2  | 2   | 3    | 4        |
 
 Sonuç < 50  Belirtiye rastlanmadı
 
