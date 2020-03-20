@@ -5,23 +5,23 @@ export class Cevaplar {
             kod: 'ates',
             baslik: 'Ateş',
             cevap: 0,
-            katsayi: 10,
+            katsayi: 8,
             secenekler : [
                 { 
                     yazi: 'Yok (36,5)',
-                    deger: 0
+                    deger: -2
                 },
                 { 
                     yazi: 'Az (37-38)',
-                    deger: 1
-                },
-                { 
-                    yazi: 'Orta (38-39)',
                     deger: 2
                 },
                 { 
-                    yazi: 'Şiddetli (39-40)',
+                    yazi: 'Orta (38-39)',
                     deger: 3
+                },
+                { 
+                    yazi: 'Şiddetli (39-40)',
+                    deger: 4
                 }
             ]
         },
@@ -34,7 +34,7 @@ export class Cevaplar {
             secenekler : [
                 { 
                     yazi: 'Yok',
-                    deger: 0
+                    deger: -1
                 },
                 { 
                     yazi: 'Az',
@@ -55,23 +55,23 @@ export class Cevaplar {
             kod: 'oksuruk',
             baslik: 'Öksürük',
             cevap: 0,
-            katsayi: 10,
+            katsayi: 6,
             secenekler : [
                 { 
                     yazi: 'Yok',
-                    deger: 0
+                    deger: -2
                 },
                 { 
                     yazi: 'Az',
-                    deger: 1
-                },
-                { 
-                    yazi: 'Orta',
                     deger: 2
                 },
                 { 
-                    yazi: 'Şiddetli',
+                    yazi: 'Orta',
                     deger: 3
+                },
+                { 
+                    yazi: 'Şiddetli',
+                    deger: 4
                 }
             ]
         },
@@ -80,23 +80,23 @@ export class Cevaplar {
             kod: 'hapsirma',
             baslik: 'Hapşırma',
             cevap: 0,
-            katsayi: -8,
+            katsayi: 4,
             secenekler : [
                 { 
                     yazi: 'Yok',
-                    deger: 0
-                },
-                { 
-                    yazi: 'Az',
                     deger: 1
                 },
                 { 
+                    yazi: 'Az',
+                    deger: -1
+                },
+                { 
                     yazi: 'Orta',
-                    deger: 2
+                    deger: -2
                 },
                 { 
                     yazi: 'Şiddetli',
-                    deger: 3
+                    deger: -6
                 }
             ]
         },
@@ -109,7 +109,7 @@ export class Cevaplar {
             secenekler : [
                 { 
                     yazi: 'Yok',
-                    deger: 0
+                    deger: -1
                 },
                 { 
                     yazi: 'Az',
@@ -130,23 +130,23 @@ export class Cevaplar {
             kod: 'akinti',
             baslik: 'Burun Akıntısı veya Tıkanıklığı',
             cevap: 0,
-            katsayi: -2,
+            katsayi: 3,
             secenekler : [
                 { 
                     yazi: 'Yok',
-                    deger: 0
-                },
-                { 
-                    yazi: 'Az',
                     deger: 1
                 },
                 { 
+                    yazi: 'Az',
+                    deger: -1
+                },
+                { 
                     yazi: 'Orta',
-                    deger: 2
+                    deger: -2
                 },
                 { 
                     yazi: 'Şiddetli',
-                    deger: 3
+                    deger: -4
                 }
             ]
         },
@@ -155,23 +155,23 @@ export class Cevaplar {
             kod: 'bogazagri',
             baslik: 'Boğaz Ağrısı',
             cevap: 0,
-            katsayi: 6,
+            katsayi: 4,
             secenekler : [
                 { 
                     yazi: 'Yok',
-                    deger: 0
+                    deger: -2
                 },
                 { 
                     yazi: 'Az',
-                    deger: 1
-                },
-                { 
-                    yazi: 'Orta',
                     deger: 2
                 },
                 { 
-                    yazi: 'Şiddetli',
+                    yazi: 'Orta',
                     deger: 3
+                },
+                { 
+                    yazi: 'Şiddetli',
+                    deger: 4
                 }
             ]
         },
@@ -184,7 +184,7 @@ export class Cevaplar {
             secenekler : [
                 { 
                     yazi: 'Yok',
-                    deger: 0
+                    deger: -1
                 },
                 { 
                     yazi: 'Az',
@@ -205,11 +205,11 @@ export class Cevaplar {
             kod: 'basagri',
             baslik: 'Baş Ağrısı',
             cevap: 0,
-            katsayi: 4,
+            katsayi: 3,
             secenekler : [
                 { 
                     yazi: 'Yok',
-                    deger: 0
+                    deger: -1
                 },
                 { 
                     yazi: 'Az',
@@ -230,23 +230,23 @@ export class Cevaplar {
             kod: 'nefes',
             baslik: 'Nefes Darlığı',
             cevap: 0,
-            katsayi: 8,
+            katsayi: 6,
             secenekler : [
                 { 
                     yazi: 'Yok',
-                    deger: 0
+                    deger: -2
                 },
                 { 
                     yazi: 'Az',
-                    deger: 1
-                },
-                { 
-                    yazi: 'Orta',
                     deger: 2
                 },
                 { 
-                    yazi: 'Şiddetli',
+                    yazi: 'Orta',
                     deger: 3
+                },
+                { 
+                    yazi: 'Şiddetli',
+                    deger: 4
                 }
             ]
         },
@@ -259,31 +259,31 @@ export class Cevaplar {
             secenekler : [
                 { 
                     yazi: 'Çocuk (0 - 12)',
-                    deger: 0
+                    deger: -3
                 },
                 { 
                     yazi: 'Genç (13 - 20)',
-                    deger: 1
+                    deger: -2
                 },
                 { 
                     yazi: 'Yetişkin (21 - 35)',
-                    deger: 2
+                    deger: -1
                 },
                 { 
                     yazi: 'Orta Yaş (36 - 50)',
-                    deger: 2
+                    deger: 0
                 },
                 { 
                     yazi: 'Yaşlı (51 - 65)',
-                    deger: 3
+                    deger: 1
                 },
                 { 
                     yazi: 'İhtiyar (66 - 80)',
-                    deger: 4
+                    deger: 2
                 },
                 { 
                     yazi: 'İleri Yaş (81 - 100)',
-                    deger: 7
+                    deger: 3
                 }
             ]
         }
