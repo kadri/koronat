@@ -14,29 +14,294 @@ Ben projeye başladıktan sonra Sağlık Bakanlığı bir app yayınladı. Sağl
 
 Sağlık Bakanlığı linki : https://koronaonlem.saglik.gov.tr/
 
+Katsayı hesaplama aşağıdaki değerlere göre yapılmakta. Algoritmayı geliştirmek adına önerilere açığız. 
+Katsayı çarpım değerini temsil ediyor. Örneğin ateş yok ise direk -2 ile çarparak toplama -16 ekliyor (16 çıkarıyor), ateşi şiddetli ise 32 ekliyor. 
+Sonuç değeri 50 puandan düşük ise hastalık belirtisi bulunmuyor deniyor. 50-80 arasında ise hasta olabilirsiniz deniyor. 80 üstünde ise acil olarak 184 ü araması isteniyor.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+{
+            asama: 1,
+            kod: 'ates',
+            baslik: 'Ateş',
+            cevap: 0,
+            katsayi: 8,
+            secenekler : [
+                { 
+                    yazi: 'Yok (36,5)',
+                    deger: -2
+                },
+                { 
+                    yazi: 'Az (37-38)',
+                    deger: 2
+                },
+                { 
+                    yazi: 'Orta (38-39)',
+                    deger: 3
+                },
+                { 
+                    yazi: 'Şiddetli (39-40)',
+                    deger: 4
+                }
+            ]
+        },
+        { 
+            asama: 2,
+            kod: 'halsizlik',
+            baslik: 'Halsizlik',
+            cevap: 0,
+            katsayi: 4,
+            secenekler : [
+                { 
+                    yazi: 'Yok',
+                    deger: -1
+                },
+                { 
+                    yazi: 'Az',
+                    deger: 1
+                },
+                { 
+                    yazi: 'Orta',
+                    deger: 2
+                },
+                { 
+                    yazi: 'Şiddetli',
+                    deger: 3
+                }
+            ]
+        },
+        { 
+            asama: 3,
+            kod: 'oksuruk',
+            baslik: 'Öksürük',
+            cevap: 0,
+            katsayi: 6,
+            secenekler : [
+                { 
+                    yazi: 'Yok',
+                    deger: -2
+                },
+                { 
+                    yazi: 'Az',
+                    deger: 2
+                },
+                { 
+                    yazi: 'Orta',
+                    deger: 3
+                },
+                { 
+                    yazi: 'Şiddetli',
+                    deger: 4
+                }
+            ]
+        },
+        { 
+            asama: 4,
+            kod: 'hapsirma',
+            baslik: 'Hapşırma',
+            cevap: 0,
+            katsayi: 4,
+            secenekler : [
+                { 
+                    yazi: 'Yok',
+                    deger: 1
+                },
+                { 
+                    yazi: 'Az',
+                    deger: -1
+                },
+                { 
+                    yazi: 'Orta',
+                    deger: -2
+                },
+                { 
+                    yazi: 'Şiddetli',
+                    deger: -6
+                }
+            ]
+        },
+        { 
+            asama: 5,
+            kod: 'agri',
+            baslik: 'Vücut Ağrısı',
+            cevap: 0,
+            katsayi: 4,
+            secenekler : [
+                { 
+                    yazi: 'Yok',
+                    deger: -1
+                },
+                { 
+                    yazi: 'Az',
+                    deger: 1
+                },
+                { 
+                    yazi: 'Orta',
+                    deger: 2
+                },
+                { 
+                    yazi: 'Şiddetli',
+                    deger: 3
+                }
+            ]
+        },
+        { 
+            asama: 6,
+            kod: 'akinti',
+            baslik: 'Burun Akıntısı veya Tıkanıklığı',
+            cevap: 0,
+            katsayi: 3,
+            secenekler : [
+                { 
+                    yazi: 'Yok',
+                    deger: 1
+                },
+                { 
+                    yazi: 'Az',
+                    deger: -1
+                },
+                { 
+                    yazi: 'Orta',
+                    deger: -2
+                },
+                { 
+                    yazi: 'Şiddetli',
+                    deger: -4
+                }
+            ]
+        },
+        { 
+            asama: 7,
+            kod: 'bogazagri',
+            baslik: 'Boğaz Ağrısı',
+            cevap: 0,
+            katsayi: 4,
+            secenekler : [
+                { 
+                    yazi: 'Yok',
+                    deger: -2
+                },
+                { 
+                    yazi: 'Az',
+                    deger: 2
+                },
+                { 
+                    yazi: 'Orta',
+                    deger: 3
+                },
+                { 
+                    yazi: 'Şiddetli',
+                    deger: 4
+                }
+            ]
+        },
+        { 
+            asama: 8,
+            kod: 'ishal',
+            baslik: 'İshal',
+            cevap: 0,
+            katsayi: 2,
+            secenekler : [
+                { 
+                    yazi: 'Yok',
+                    deger: -1
+                },
+                { 
+                    yazi: 'Az',
+                    deger: 1
+                },
+                { 
+                    yazi: 'Orta',
+                    deger: 2
+                },
+                { 
+                    yazi: 'Şiddetli',
+                    deger: 3
+                }
+            ]
+        },
+        { 
+            asama: 9,
+            kod: 'basagri',
+            baslik: 'Baş Ağrısı',
+            cevap: 0,
+            katsayi: 3,
+            secenekler : [
+                { 
+                    yazi: 'Yok',
+                    deger: -1
+                },
+                { 
+                    yazi: 'Az',
+                    deger: 1
+                },
+                { 
+                    yazi: 'Orta',
+                    deger: 2
+                },
+                { 
+                    yazi: 'Şiddetli',
+                    deger: 3
+                }
+            ]
+        },
+        { 
+            asama: 10,
+            kod: 'nefes',
+            baslik: 'Nefes Darlığı',
+            cevap: 0,
+            katsayi: 6,
+            secenekler : [
+                { 
+                    yazi: 'Yok',
+                    deger: -2
+                },
+                { 
+                    yazi: 'Az',
+                    deger: 2
+                },
+                { 
+                    yazi: 'Orta',
+                    deger: 3
+                },
+                { 
+                    yazi: 'Şiddetli',
+                    deger: 4
+                }
+            ]
+        },
+        {
+            asama: 11,
+            kod: 'yas',
+            baslik: 'Yaşınız',
+            cevap: 0,
+            katsayi: 3,
+            secenekler : [
+                { 
+                    yazi: 'Çocuk (0 - 12)',
+                    deger: -3
+                },
+                { 
+                    yazi: 'Genç (13 - 20)',
+                    deger: -2
+                },
+                { 
+                    yazi: 'Yetişkin (21 - 35)',
+                    deger: -1
+                },
+                { 
+                    yazi: 'Orta Yaş (36 - 50)',
+                    deger: 0
+                },
+                { 
+                    yazi: 'Yaşlı (51 - 65)',
+                    deger: 1
+                },
+                { 
+                    yazi: 'İhtiyar (66 - 80)',
+                    deger: 2
+                },
+                { 
+                    yazi: 'İleri Yaş (81 - 100)',
+                    deger: 3
+                }
+            ]
+        }
