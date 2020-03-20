@@ -31,6 +31,11 @@ Katsayı çarpım değerini temsil ediyor. Örneğin ateş yok ise direk -2 ile 
 | Nefes Darlığ | 6 x | -2 | 2 | 3 | 4 |  |  |  | 
 | Yaş          | 3 x | -3 | -2 | -1 | 0 | 1 | 2 | 3
 
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 Sonuç < 50  Belirtiye rastlanmadı
 
 Sonuç 50-80 Belirtiler gözüküyor dikkatli olunmalı
