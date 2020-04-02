@@ -77,26 +77,26 @@ export class Cevaplar {
         },
         { 
             asama: 4,
-            kod: 'hapsirma',
-            baslik: 'Hapşırma',
+            kod: 'koku',
+            baslik: 'Koku - Tat Kaybı',
             cevap: 0,
-            katsayi: 4,
+            katsayi: 3,
             secenekler : [
                 { 
                     yazi: 'Yok',
-                    deger: 1
-                },
-                { 
-                    yazi: 'Az',
                     deger: -1
                 },
                 { 
+                    yazi: 'Az',
+                    deger: 2
+                },
+                { 
                     yazi: 'Orta',
-                    deger: -2
+                    deger: 3
                 },
                 { 
                     yazi: 'Şiddetli',
-                    deger: -6
+                    deger: 5
                 }
             ]
         },

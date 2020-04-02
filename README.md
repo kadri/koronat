@@ -22,7 +22,7 @@ Katsayı çarpım değerini temsil ediyor. Örneğin ateş yok ise direk -2 ile 
 | Ateş      | 8 x     | -2  | 2   | 3    | 4        |
 | Halsizlik | 4 x     | -1  | 1   | 2    | 3        |
 | Öksürük   | 6 x     | -2  | 2   | 3    | 4        |
-| Hapşırma  | 4 x     | 1   | -1  | -2   | -6       |
+| Koku Kaybı| 3 x     | -1  | 2   | 3    | 5        |
 | Vücut Ağr | 4 x     | -1  | 1   | 2    | 3        |
 | Burun Akı | 3 x     | 1   | -1  | -2   | -4       |
 | Boğaz Ağr | 4 x     | -2  | 2   | 3    | 4        |
