@@ -7,8 +7,6 @@ Projede amaçlanan; Covid-19(yeni tip korona) virüsünün hızlı yayılımı s
 
 Umarız bu salgını en az kayıp ile atlatırız. 
 
-Demo link http://koronat.vidarti.com
-
 Edit:
 Ben projeye başladıktan sonra Sağlık Bakanlığı bir app yayınladı. Sağlık bakanlığının sistemine itibar etmenizi rica ederim. Benim yazdığım sadece bir deneme. Vatanım milletim için bu dönemde ne yapabilirim diye başlamış bir proje. Bu projede hiçbir vatandaşımızın kişisel bilgileri saklanmamaktadır. Hiçbir maddi amaç yoktur. 
 
